@@ -26,7 +26,7 @@ export const LandingSocialProofBand = ({
     >
       <div
         className={clsx(
-          'max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-8 px-8',
+          'max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-4 md:gap-8 px-4 md:px-8',
           invert
             ? 'text-gray-300 dark:text-gray-600'
             : 'text-gray-700 dark:text-gray-200',
