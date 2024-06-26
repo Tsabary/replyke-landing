@@ -11,6 +11,8 @@ function Hero() {
       <LandingPrimaryTextCtaSection
         title="Integrate Comments in Minutes"
         description="Enhance your React projects with Replyke. Effortlessly add a customizable comment section and provide a better user experience."
+        withBackground
+        className="flex-1"
       >
         <div className="flex gap-2">
           <Button size="xl" asChild>

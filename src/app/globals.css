@@ -13,6 +13,11 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+
+    --primary-lighter-hex: theme("colors.primary.200");
+    --secondary-lighter-hex: theme("colors.secondary.200");
+    --primary-dark-hex: theme("colors.primary.800");
+    --secondary-dark-hex: theme("colors.secondary.800");
   }
 }
 
@@ -31,7 +36,6 @@ body {
     text-wrap: balance;
   }
 }
-
 
 @layer base {
   :root {
@@ -98,6 +102,10 @@ body {
   h5,
   h6 {
     @apply font-semibold font-display;
+  }
+
+  textarea:focus {
+    @apply outline-none;
   }
 }
 
@@ -172,4 +180,3 @@ body {
     @apply xl:max-w-7xl;
   }
 }
-

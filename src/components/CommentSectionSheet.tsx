@@ -43,10 +43,11 @@ export function CommentSectionSheet({
     <CommentSection
       apiBaseUrl={process.env.NEXT_PUBLIC_API_URL!}
       articleId="home"
-      sectionProps={{ ...config?.sectionProps }}
-      formProps={{ ...config?.formProps }}
-      statsBarProps={{ ...config?.statsBarProps }}
-      commentElementsProps={{ ...config?.commentElementsProps }}
+      styleId="6491c41f70fd8008dcec1a09"
+      // sectionProps={{ ...config?.sectionProps }}
+      // formProps={{ ...config?.formProps }}
+      // statsBarProps={{ ...config?.statsBarProps }}
+      // commentElementsProps={{ ...config?.commentElementsProps }}
       callbacks={{
         loginClickCallback: () =>
           alert("You will change this to your own login implementation"),
@@ -67,7 +68,9 @@ export function CommentSectionSheet({
             <SheetTitle>{title}</SheetTitle>
             <SheetDescription>{description}</SheetDescription>
           </SheetHeader>
-          <ScrollArea className="flex-1 p-6 pt-0">{commentSection}</ScrollArea>
+          <ScrollArea className="flex-1">
+            <div className="m-6 mt-0">{commentSection}</div>
+          </ScrollArea>
         </SheetContent>
       </Sheet>
     );
@@ -81,7 +84,9 @@ export function CommentSectionSheet({
           <DrawerTitle>{title}</DrawerTitle>
           <DrawerDescription>{description}</DrawerDescription>
         </DrawerHeader>
-        <ScrollArea className="flex-1 p-6 pt-0">{commentSection}</ScrollArea>
+        <ScrollArea className="flex-1">
+          <div className="m-6 mt-0">{commentSection}</div>
+        </ScrollArea>
       </DrawerContent>
     </Drawer>
   );

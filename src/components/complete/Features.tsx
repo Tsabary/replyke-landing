@@ -14,7 +14,7 @@ function Features() {
           title: "Easy Integration",
           description:
             "Add a robust comment section to your React project in minutes by following our simple documentation.",
-          icon: <Sparkles/>,
+          icon: <Sparkles />,
         },
         {
           title: "Customizable Design",
@@ -29,6 +29,7 @@ function Features() {
           icon: <ShieldCheck />,
         },
       ]}
+      withBackgroundGlow
     />
   );
 }

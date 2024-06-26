@@ -16,8 +16,6 @@ export const GlowBg = ({
       ? "var(--primary-dark-hex)"
       : "var(--secondary-dark-hex)";
 
-  console.log(stopColor);
-  console.log(stopColorTwo);
 
   return (
     <svg
