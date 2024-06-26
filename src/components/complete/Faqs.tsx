@@ -50,6 +50,8 @@ function Faqs() {
       title={"FAQ"}
       description="Looking to learn more about Replyke? Here are some of the most common questions."
       faqItems={faqs}
+      withBackground
+      variant="secondary"
     />
   );
 }
